@@ -1,0 +1,115 @@
+.app-container {
+  text-align: center;
+  width: 100%;
+  min-height: calc(100vh - 80px);
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start; /* ✅ start from top */
+  align-items: center;
+
+  padding: 40px 0; /* ✅ spacing */
+}
+/* Title */
+.app-title {
+  font-size: 42px;
+  font-weight: bold;
+
+  color: #ffffff;
+
+  text-shadow: 0 4px 15px rgba(0,0,0,0.7);
+}
+h2 {
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+}
+.search-box {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(12px);
+
+  padding: 25px;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  width: 300px;
+  margin: auto;
+}
+
+/* MUI input tweak */
+.MuiTextField-root {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+
+.search-btn {
+  margin-top: 15px !important;
+  padding: 10px 20px !important;
+
+  font-size: 16px !important;
+  font-weight: bold !important;
+
+  border-radius: 10px !important;
+
+  /* 🔥 Gradient button */
+  background: linear-gradient(135deg, #00c6ff, #0072ff) !important;
+
+  color: white !important;
+
+  transition: all 0.3s ease !important;
+}
+
+.search-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0, 114, 255, 0.5);
+}
+
+.search-btn:active {
+  transform: scale(0.95);
+}
+
+.weather-card {
+  width: 380px;   /* 🔥 increase this */
+  max-width: 90%; /* responsive */
+
+  margin: auto;
+  border-radius: 20px !important;
+
+  background: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  color: white;
+}
+
+.weather-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image */
+.weather-img {
+  height: 180px;
+}
+
+/* Content */
+.weather-content {
+  text-align: left;
+  padding: 15px;
+}
+
+.weather-content p {
+  color: #e0e0e0;
+  font-size: 15px;
+}
+
+.weather-content h5 {
+  color: #ffffff;
+  font-weight: bold;
+}
+.head{ 
+  text-align: center;
+  color: #d8ef5a;
+ }

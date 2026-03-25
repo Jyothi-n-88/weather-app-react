@@ -1,0 +1,42 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* BODY */
+body {
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+
+  background: url("https://images.unsplash.com/photo-1502086223501-7ea6ecd79368") 
+              no-repeat center center/cover;
+
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  position: relative;
+
+  overflow-y: auto; /* ✅ only ONE scrollbar */
+}
+
+/* OVERLAY */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+/* ROOT */
+#root {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;  
+  overflow: visible;
+}
