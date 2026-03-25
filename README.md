@@ -25,3 +25,6 @@ It allows users to search for any city and view real-time weather details.
 - OpenWeather API
 
 ---
+## Demo Video
+
+https://drive.google.com/file/d/1ePSLVleWGIRRHfHB9EOPOtewxLbhn1ER/view?usp=sharing
